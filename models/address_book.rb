@@ -22,7 +22,7 @@ class AddressBook
           
       end
       
-      index+= 1
+      index += 1
       
    end
    

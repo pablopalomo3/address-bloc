@@ -108,7 +108,7 @@ class MenuController
   
   def entry_by_n
     print "Entry number to view: "
-    number = gets.chomp.to_i
+    number = gets.chomp.to_i-1
     
     if number < @address_book.entries.count
       puts @address_book.entries[number]
