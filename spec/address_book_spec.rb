@@ -137,4 +137,18 @@ require_relative '../models/address_book.rb'
       end
     end
     
+    describe "#nuke all entries" do
+      it "deletes all entries in address book" do
+        book.add_entry("Bill", "555-555-4854", "bill@blocmail.com")
+        book.add_entry("Bob", "555-555-5415", "bob@blocmail.com")
+        book.add_entry("Joe", "555-555-3660", "joe@blocmail.com")
+        expect(book.entries.size).to eq(3)
+        
+        book.nuke_all
+        expect(book.entries.size).to eq(0)
+      end
+        
+    end
+    
+    
  end

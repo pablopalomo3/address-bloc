@@ -58,4 +58,11 @@ class AddressBook
     return nil
   end
   
+  def nuke_all
+    # @entries.each do |entry|
+    #   @entries.delete(entry)
+    # end
+    @entries = []
+  end
+  
 end
