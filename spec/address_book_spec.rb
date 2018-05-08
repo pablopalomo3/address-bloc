@@ -110,7 +110,7 @@ require_relative '../models/address_book.rb'
         # Check the first entry
         entry_one = book.entries[0]
         
-        check_entry(entry_one,"Pablo", "555-555-4854", "pablo@blocmail.com")
+        check_entry(entry_one,"April", "555-555-4854", "april@blocmail.com")
         
       end
       
