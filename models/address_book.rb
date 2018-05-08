@@ -12,20 +12,14 @@ class AddressBook
   end
    
   def add_entry(name, phone_number, email)
-    
-   index = 0
-   
-   entries.each do |entry|
+    index = 0
+    @entries.each do |entry|
       if name < entry.name
           break
       end
-      
       index += 1
-      
-   end
-   
-   entries.insert(index, Entry.new(name, phone_number, email))
-   
+    end
+    @entries.insert(index, Entry.new(name, phone_number, email))
   end
   
   def import_from_csv(file_name)
